@@ -832,24 +832,35 @@
 						</div>
 						<div class="col-sm-6">
 							<div class="footer-content">
-								<form role="form" id="footer-form, action="enviar_email.php" method="post"">
-									<div class="form-group has-feedback">
-										<label class="sr-only" for="name2">Name</label>
-										<input type="text" class="form-control" id="name2" placeholder="Nombre" name="name2" required>
-										<i class="fa fa-user form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label class="sr-only" for="email2">Email address</label>
-										<input type="email" class="form-control" id="email2" placeholder="Email" name="email2" required>
-										<i class="fa fa-envelope form-control-feedback"></i>
-									</div>
-									<div class="form-group has-feedback">
-										<label class="sr-only" for="message2">Message</label>
-										<textarea class="form-control" rows="8" id="message2" placeholder="Mensaje" name="message2" required></textarea>
-										<i class="fa fa-pencil form-control-feedback"></i>
-									</div>
-									<input type="submit" value="Enviar" class="btn btn-default">
+								<form role="form" id="footer-form" action="https://formspree.io/f/xwkgqglw" method="post">
+    									<!-- Campo oculto para el correo electrónico de respuesta -->
+    									<input type="hidden" name="_replyto" value="jose.crespo@conicet.gov.ar">
+
+    									<!-- Campo oculto para el asunto del correo -->
+								    <input type="hidden" name="_subject" value="Nuevo mensaje del formulario de contacto">
+								
+								    <div class="form-group has-feedback">
+								        <label class="sr-only" for="name2">Nombre</label>
+								        <input type="text" class="form-control" id="name2" placeholder="Nombre" name="nombre" required>
+								        <i class="fa fa-user form-control-feedback"></i>
+								    </div>
+								
+								    <div class="form-group has-feedback">
+								        <label class="sr-only" for="email2">Correo electrónico</label>
+								        <input type="email" class="form-control" id="email2" placeholder="Correo electrónico" name="email" required>
+								        <i class="fa fa-envelope form-control-feedback"></i>
+								    </div>
+								
+								    <div class="form-group has-feedback">
+								        <label class="sr-only" for="message2">Mensaje</label>
+								        <textarea class="form-control" rows="8" id="message2" placeholder="Mensaje" name="mensaje" required></textarea>
+								        <i class="fa fa-pencil form-control-feedback"></i>
+								    </div>
+								
+								    <!-- Botón de enviar -->
+								    <button type="submit" class="btn btn-default">Enviar</button>
 								</form>
+
 							</div>
 						</div>
 					</div>
