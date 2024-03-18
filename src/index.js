@@ -6,7 +6,7 @@ let skinTriggerInput;
 const riveInstance = new rive.Rive({
   // Hosted .riv asset, or a local one. Uncomment line 8 to try with
   // a local basketball.riv asset, or add your own!
-  src: "lady-bug.riv",
+  src: "skin-test.riv",
   layout: new rive.Layout({
     fit: rive.Fit.Cover,
     alignment: rive.Alignment.Center
