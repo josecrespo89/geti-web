@@ -147,18 +147,16 @@
 
 		<canvas id="riveCanvas"></canvas>
 
-<script src="https://unpkg.com/rive-canvas@0.0.10/rive.js"></script>
+<canvas id="canvas"></canvas>
+<script src="https://unpkg.com/@rive-app/canvas"></script>
 <script>
-  const canvas = document.getElementById('riveCanvas');
-  const riveCanvas = new RiveCanvas({
-    canvas: canvas,
-    autoplay: true
-  });
-  riveCanvas.load('https://github.com/josecrespo89/geti-web/raw/main/lady-bug.riv').then(() => {
-    console.log('Animación cargada correctamente');
-  }).catch(error => {
-    console.error('Error al cargar la animación:', error);
-  });
+  // autoplays the first animation in the default artboard
+  new rive.Rive({
+    src: 'https://github.com/josecrespo89/geti-web/raw/main/lady-bug.riv', // host your Rive file and add the url to src 
+    canvas: document.getElementById('canvas'),
+    autoplay: true,
+    layout: new rive.Layout({fit: 'cover', alignment: 'center'}),
+  })
 </script>
 
 
