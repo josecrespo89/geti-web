@@ -773,16 +773,18 @@
 			<!-- ================ -->
 			<footer id="footer">
 			<div class="footer section">
-	<div class="default-bg space blue">
+			<div class="default-bg space blue">
 			<div class="row">
 				<div class="container">
-					<div class="col-sm-12">
+					<div class=""col-sm-12 d-flex justify-content-center"">
 					<!--<h1 class="title text-center" id="contact">Contactanos</h1>-->
 						<div id="lottie-container" style="width: 300px; height: 300px;"></div>
+					</div>
+    				</div>
+			</div>
 
 <!-- Carga la biblioteca de Lottie -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.2/lottie.min.js"></script>
-
 <script>
   // Esperar a que se cargue el DOM
   document.addEventListener('DOMContentLoaded', function() {
@@ -802,89 +804,80 @@
     var anim = lottie.loadAnimation(options);
   });
 </script>
-					</div>
+		<!-- section end -->
+
+			<div class="space"></div>
+			<div class="row">
+			<div class="container">
+			<div class="col-sm-6">
+				<div class="footer-content">
+					<!-- <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nam magnam natus tempora cumque, aliquam deleniti voluptatibus voluptas. Repellat vel, et itaque commodi iste ab, laudantium voluptas deserunt nobis.</p> -->
+					<ul class="list-icons">
+						<li><i class="fa fa-map-marker pr-10"></i> Facultad de Ciencias Exactas y Naturales - Universidad de Buenos Aires - Argentina</li>
+						<li><i class="fa fa-phone pr-10"></i> (+54 11) 5285-7400</li>
+						<!-- <li><i class="fa fa-fax pr-10"></i> +00 1234567891 </li> -->
+						<li><i class="fa fa-envelope-o pr-10"></i> jose.crespo@conicet.gov.ar</li>
+					</ul>
+					<ul class="social-links">
+						<!-- <li class="facebook"><i class="fa fa-facebook"></i></li> -->
+						<li class="twitter">
+    							<a href="https://twitter.com/josecrespo89" target="_blank">
+        							<i class="fa fa-twitter"></i>
+    							</a>
+						</li>
+						 <!-- <li class="googleplus"><i class="fa fa-google-plus"></i></li> -->
+						 <!-- <li class="skype"><i class="fa fa-skype"></i></li> -->
+						<!-- <li class="researchgate"><i class="fa-brands fa-researchgate"></i></li> -->
+						<li class="researchgate">
+						    <a href="https://www.researchgate.net/profile/Jose-Crespo-19" target="_blank">
+						        <i class="fa-brands fa-researchgate"></i>
+						    </a>
+						</li>
+						<li class="linkedin">
+							<a href="https://www.linkedin.com/in/jos%C3%A9-crespo-1886353a/" target="_blank">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</li>
+						<li class="youtube"><i class="fa fa-youtube"></i></li>
+						<!-- <li class="flickr"><i class="fa fa-flickr"></i></li> -->
+						<!-- <li class="pinterest"><i class="fa fa-pinterest"></i></li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="footer-content">
+					<form role="form" id="footer-form" action="https://formspree.io/f/xwkgqglw" method="post">
+    						<!-- Campo oculto para el correo electrónico de respuesta -->
+    						<input type="hidden" name="_replyto" value="jose.crespo@conicet.gov.ar">
+    							<!-- Campo oculto para el asunto del correo -->
+					    <input type="hidden" name="_subject" value="Nuevo mensaje del formulario de contacto">
+					
+					    <div class="form-group has-feedback">
+					        <label class="sr-only" for="name2">Nombre</label>
+					        <input type="text" class="form-control" id="name2" placeholder="Nombre" name="nombre" required>
+					        <i class="fa fa-user form-control-feedback"></i>
+					    </div>
+					
+					    <div class="form-group has-feedback">
+					        <label class="sr-only" for="email2">Correo electrónico</label>
+					        <input type="email" class="form-control" id="email2" placeholder="Correo electrónico" name="email" required>
+					        <i class="fa fa-envelope form-control-feedback"></i>
+					    </div>
+					
+					    <div class="form-group has-feedback">
+					        <label class="sr-only" for="message2">Mensaje</label>
+					        <textarea class="form-control" rows="8" id="message2" placeholder="Mensaje" name="mensaje" required></textarea>
+					        <i class="fa fa-pencil form-control-feedback"></i>
+					    </div>
+					
+					    <!-- Botón de enviar -->
+					    <button type="submit" class="btn btn-default">Enviar</button>
+					</form>
 				</div>
 			</div>
 		</div>
-		<!-- section end -->
-		
-					
-					
-					
-					<div class="space"></div>
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="footer-content">
-								<!-- <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nam magnam natus tempora cumque, aliquam deleniti voluptatibus voluptas. Repellat vel, et itaque commodi iste ab, laudantium voluptas deserunt nobis.</p> -->
-								<ul class="list-icons">
-									<li><i class="fa fa-map-marker pr-10"></i> Facultad de Ciencias Exactas y Naturales - Universidad de Buenos Aires - Argentina</li>
-									<li><i class="fa fa-phone pr-10"></i> (+54 11) 5285-7400</li>
-									<!-- <li><i class="fa fa-fax pr-10"></i> +00 1234567891 </li> -->
-									<li><i class="fa fa-envelope-o pr-10"></i> jose.crespo@conicet.gov.ar</li>
-								</ul>
-								<ul class="social-links">
-									<!-- <li class="facebook"><i class="fa fa-facebook"></i></li> -->
-									<li class="twitter">
-    										<a href="https://twitter.com/josecrespo89" target="_blank">
-        										<i class="fa fa-twitter"></i>
-    										</a>
-									</li>
-									 <!-- <li class="googleplus"><i class="fa fa-google-plus"></i></li> -->
-									 <!-- <li class="skype"><i class="fa fa-skype"></i></li> -->
-									<!-- <li class="researchgate"><i class="fa-brands fa-researchgate"></i></li> -->
-									<li class="researchgate">
-									    <a href="https://www.researchgate.net/profile/Jose-Crespo-19" target="_blank">
-									        <i class="fa-brands fa-researchgate"></i>
-									    </a>
-									</li>
-									<li class="linkedin">
-										<a href="https://www.linkedin.com/in/jos%C3%A9-crespo-1886353a/" target="_blank">
-											<i class="fa fa-linkedin"></i>
-										</a>
-									</li>
-									<li class="youtube"><i class="fa fa-youtube"></i></li>
-									<!-- <li class="flickr"><i class="fa fa-flickr"></i></li> -->
-									<!-- <li class="pinterest"><i class="fa fa-pinterest"></i></li> -->
-								</ul>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="footer-content">
-								<form role="form" id="footer-form" action="https://formspree.io/f/xwkgqglw" method="post">
-    									<!-- Campo oculto para el correo electrónico de respuesta -->
-    									<input type="hidden" name="_replyto" value="jose.crespo@conicet.gov.ar">
-
-    									<!-- Campo oculto para el asunto del correo -->
-								    <input type="hidden" name="_subject" value="Nuevo mensaje del formulario de contacto">
-								
-								    <div class="form-group has-feedback">
-								        <label class="sr-only" for="name2">Nombre</label>
-								        <input type="text" class="form-control" id="name2" placeholder="Nombre" name="nombre" required>
-								        <i class="fa fa-user form-control-feedback"></i>
-								    </div>
-								
-								    <div class="form-group has-feedback">
-								        <label class="sr-only" for="email2">Correo electrónico</label>
-								        <input type="email" class="form-control" id="email2" placeholder="Correo electrónico" name="email" required>
-								        <i class="fa fa-envelope form-control-feedback"></i>
-								    </div>
-								
-								    <div class="form-group has-feedback">
-								        <label class="sr-only" for="message2">Mensaje</label>
-								        <textarea class="form-control" rows="8" id="message2" placeholder="Mensaje" name="mensaje" required></textarea>
-								        <i class="fa fa-pencil form-control-feedback"></i>
-								    </div>
-								
-								    <!-- Botón de enviar -->
-								    <button type="submit" class="btn btn-default">Enviar</button>
-								</form>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- .footer end -->
+	</div>
+	<!-- .footer end -->
 
 			<!-- .subfooter start -->
 			<!-- ================ -->
