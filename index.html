@@ -144,25 +144,24 @@
 			</div>
 		</div>
 		<!-- section end -->
-<canvas id="canvas" width="400" height="400"></canvas>
 
-<script src="https://unpkg.com/@rive-app/canvas"></script>
-<script>
-  const canvas = document.getElementById('canvas');
-  const ctx = canvas.getContext('2d');
-  const r = new Rive({
-    src: 'https://cdn.rive.app/animations/vehicles.riv',
-    autoplay: true,
-    onLoad: () => {
-      r.viewBox = new Rive.Rectangle(0, 0, canvas.width, canvas.height);
-      r.canvasContext = ctx;
-      r.draw();
-    },
-  });
-</script>
-
-
-
+		<!-- section start -->
+		<canvas id="canvas" width="400" height="400"></canvas>
+		<script src="https://unpkg.com/@rive-app/canvas"></script>
+			<script>
+			  const canvas = document.getElementById('canvas');
+			  const ctx = canvas.getContext('2d');
+			  const r = new Rive({
+			    src: 'https://cdn.rive.app/animations/vehicles.riv',
+			    autoplay: true,
+			    onLoad: () => {
+			      r.viewBox = new Rive.Rectangle(0, 0, canvas.width, canvas.height);
+			      r.canvasContext = ctx;
+			      r.draw();
+			    },
+			  });
+			</script>
+		<!-- section end -->
 		
 		
 		<!-- section start -->
