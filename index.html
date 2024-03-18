@@ -143,28 +143,19 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-		<div class="default-bg space blue">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<h1 class="text-center">Let's Work Together!</h1>
-						<div class="seccion-rive">
-							<h2>Animación de Rive</h2>
-						  	<div id="rive-container"></div>
-						</div>
-						<script>
-							const riveFile = 'https://github.com/josecrespo89/geti-web/blob/main/lady-bug.riv'; // Reemplaza con la ruta a tu archivo Rive
-							const riveContainer = document.getElementById('rive-container');
-							const rive = new Rive({
-							src: riveFile,
-							canvas: document.createElement('canvas'),
-							});
-							rive.draw(riveContainer);
-						</script>							
-					</div>
-				</div>
-			</div>
+		<div class="seccion-rive">
+				<h2>Animación de Rive</h2>
+				<div id="rive-container"></div>
 		</div>
+		<script>
+			const riveFile = 'https://github.com/josecrespo89/geti-web/blob/main/lady-bug.riv'; // Reemplaza con la ruta a tu archivo Rive
+			const riveContainer = document.getElementById('rive-container');
+			const rive = new Rive({
+			src: riveFile,
+			canvas: document.createElement('canvas'),
+			});
+			rive.draw(riveContainer);
+		</script>							
 		<!-- section end -->
 		
 		<!-- section start -->
