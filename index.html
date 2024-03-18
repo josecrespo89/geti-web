@@ -144,6 +144,24 @@
 			</div>
 		</div>
 		<!-- section end -->
+
+		<canvas id="riveCanvas"></canvas>
+
+<script src="https://unpkg.com/rive-canvas@0.0.10/rive.js"></script>
+<script>
+  const canvas = document.getElementById('riveCanvas');
+  const riveCanvas = new RiveCanvas({
+    canvas: canvas,
+    autoplay: true
+  });
+  riveCanvas.load('https://github.com/josecrespo89/geti-web/raw/main/lady-bug.riv').then(() => {
+    console.log('Animación cargada correctamente');
+  }).catch(error => {
+    console.error('Error al cargar la animación:', error);
+  });
+</script>
+
+
 		
 		
 		<!-- section start -->
