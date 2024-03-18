@@ -1,29 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animación Rive desde Repositorio Local</title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
 
-<canvas id="canvas" width="400" height="400"></canvas>
+  <body>
+    <div id="app">
+      <h1>State Machine Example</h1>
+      <canvas id="canvas" width="800px" height="800px"></canvas>
+      <button class="btn">Change Skin</button>
+    </div>
 
-<script src="https://cdn.rive.app/standalone/rive.js"></script>
-<script>
-  const canvas = document.getElementById('canvas');
-  const ctx = canvas.getContext('2d');
-
-  const r = new Rive({
-    src: 'https://github.com/josecrespo89/geti-web/raw/main/vehicles .riv',
-    autoplay: true,
-    onLoad: () => {
-      r.viewBox = new Rive.Rectangle(0, 0, canvas.width, canvas.height);
-      r.canvasContext = ctx;
-      r.draw();
-    },
-  });
-</script>
-
-</body>
+    <script src="src/index.js"></script>
+  </body>
 </html>

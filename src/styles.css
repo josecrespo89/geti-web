@@ -1,0 +1,20 @@
+body {
+  font-family: sans-serif;
+}
+
+canvas {
+  width: 400px;
+  height: 400px;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  border: none;
+  background: #0069ed;
+  border-radius: 2px;
+  height: 32px;
+  margin-top: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
