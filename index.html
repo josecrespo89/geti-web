@@ -35,6 +35,15 @@
 		<!-- Custom css --> 
 		<link href="css/custom.css" rel="stylesheet">
 
+		<script src="https://cdn.jsdelivr.net/npm/rive-js@0.11.22/rive.min.js"></script>
+		<style>
+		    .seccion-rive {
+		      text-align: center; /* Alinea el contenido al centro */
+		      padding: 20px; /* Espacio alrededor del contenido */
+		      border: 1px solid #ccc; /* Borde para resaltar la sección */
+		    }
+		</style>
+		
 	</head>
 
 	<body class="no-trans">
@@ -134,21 +143,24 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-		<canvas id="canvas" width="500" height="500"></canvas>
-		<script src="https://unpkg.com/@rive-app/canvas@2.7.0"></script>
+		<div class="seccion-rive">
+		  <h2>Animación de Rive</h2>
+		  <div id="rive-container"></div>
+		</div>
 		
 		<script>
-		    const r = new rive.Rive({
-		        src: 'https://github.com/josecrespo89/geti-web/blob/be7c1d5f905b95044a1546bdbd0e19b4d1cfb3b6/lady-bug.riv',
-			    
-		        canvas: document.getElementById("canvas"),
-		        autoplay: true,
-		        stateMachines: "bumpy",
-		        onLoad: () => {
-		          r.resizeDrawingSurfaceToCanvas();
-		        },
-		    });
+		  const riveFile = 'https://github.com/josecrespo89/geti-web/blob/main/lady-bug.riv'; // Reemplaza con la URL de tu archivo Rive en GitHub
+		
+		  const riveContainer = document.getElementById('rive-container');
+		
+		  const rive = new Rive({
+		    src: riveFile,
+		    canvas: document.createElement('canvas'),
+		  });
+		
+		  rive.draw(riveContainer);
 		</script>
+
 		
 		<!-- section end -->
 		
