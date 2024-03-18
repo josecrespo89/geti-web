@@ -143,24 +143,20 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-		<div class="seccion-rive">
-		  <h2>Animación de Rive</h2>
-		  <div id="rive-container"></div>
-		</div>
-		
-		<script>
-		  const riveFile = 'https://api.github.com/repos/josecrespo89/geti-web/contents/raw/main/lady-bug.riv'; // Reemplaza con la URL de tu archivo Rive en GitHub
-		
-		  const riveContainer = document.getElementById('rive-container');
-		
-		  const rive = new Rive({
-		    src: riveFile,
-		    canvas: document.createElement('canvas'),
-		  });
-		
-		  rive.draw(riveContainer);
-		</script>
+		<canvas id="canvas" width="500" height="500"></canvas>
 
+    <script src="https://unpkg.com/@rive-app/canvas@2.7.0"></script>
+    <script>
+      const r = new rive.Rive({
+        src: "https://github.com/josecrespo89/geti-web/raw/main/lady-bug.riv",
+        canvas: document.getElementById("canvas"),
+        autoplay: true,
+        stateMachines: "bumpy",
+        onLoad: () => {
+          r.resizeDrawingSurfaceToCanvas();
+        },
+      });
+    </script>
 		
 		<!-- section end -->
 		
