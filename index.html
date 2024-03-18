@@ -35,15 +35,6 @@
 		<!-- Custom css --> 
 		<link href="css/custom.css" rel="stylesheet">
 
-		<script src="https://cdn.jsdelivr.net/npm/rive-js@0.11.22/rive.min.js"></script>
-		  <style>
-		    .seccion-rive {
-		      text-align: center; /* Alinea el contenido al centro */
-		      padding: 20px; /* Espacio alrededor del contenido */
-		      border: 1px solid #ccc; /* Borde para resaltar la sección */
-		    }
-		  </style>
-
 	</head>
 
 	<body class="no-trans">
@@ -143,19 +134,23 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-		<div class="seccion-rive">
-				<h2>Animación de Rive</h2>
-				<div id="rive-container"></div>
-		</div>
+		<canvas id="canvas" width="500" height="500"></canvas>
+		<script src="https://unpkg.com/@rive-app/canvas@2.7.0"></script>
+		
 		<script>
-			const riveFile = 'https://github.com/josecrespo89/geti-web/blob/main/lady-bug.riv'; // Reemplaza con la ruta a tu archivo Rive
-			const riveContainer = document.getElementById('rive-container');
-			const rive = new Rive({
-			src: riveFile,
-			canvas: document.createElement('canvas'),
-			});
-			rive.draw(riveContainer);
-		</script>							
+		    const r = new rive.Rive({
+		        src: "https://cdn.rive.app/animations/vehicles.riv",
+		        // OR the path to a discoverable and public Rive asset
+		        // src: 'https://github.com/josecrespo89/geti-web/blob/main/lady-bug.riv',
+		        canvas: document.getElementById("canvas"),
+		        autoplay: true,
+		        stateMachines: "bumpy",
+		        onLoad: () => {
+		          r.resizeDrawingSurfaceToCanvas();
+		        },
+		    });
+		</script>
+		
 		<!-- section end -->
 		
 		<!-- section start -->
