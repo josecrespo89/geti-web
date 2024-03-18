@@ -15,17 +15,31 @@
   document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById('canvas');
     const ctx = canvas.getContext('2d');
-    const r = new Rive({
-      src: 'https://cdn.rive.app/animations/vehicles.riv',
-      autoplay: true,
-      onLoad: () => {
-        r.viewBox = new Rive.Rectangle(0, 0, canvas.width, canvas.height);
-        r.canvasContext = ctx;
-        r.draw();
-      },
+    
+    // Cargar la animación Rive
+    rive.load('https://cdn.rive.app/animations/vehicles.riv').then((riveFile) => {
+      const animation = new rive.LinearAnimation(riveFile, 'idle');
+      
+      // Reproducir la animación
+      animation.loop = true;
+      animation.advance(0);
+      animation.apply(ctx);
+      
+      // Definir el bucle de animación
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        animation.advance(1 / 60);
+        animation.apply(ctx);
+        requestAnimationFrame(animate);
+      }
+      
+      // Iniciar la animación
+      animate();
     });
   });
 </script>
 
+</body>
+</html>
 </body>
 </html>
