@@ -134,17 +134,21 @@
 
 		<!-- section start -->
 		<!-- ================ -->
-		<canvas id="canvas" width="1200" height="1200"></canvas>
+		<canvas id="canvas" width="400" height="400"></canvas>
 
 <script src="https://unpkg.com/@rive-app/canvas@2.7.0"></script>
 <script>
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+
   const r = new rive.Rive({
-    src: "https://drive.google.com/uc?export=download&id=1yrmWue6kLGoAWbhRCmXA2SrT3cbg88Eu",
-    canvas: document.getElementById("canvas"),
+    src: 'https://cdn.rive.app/animations/vehicles.riv',
+    canvas: canvas,
     autoplay: true,
-    stateMachines: "bumpy",
     onLoad: () => {
-      r.resizeDrawingSurfaceToCanvas();
+      rive.defaultViewBox = new rive.Rectangle(0, 0, canvas.width, canvas.height);
+      r.canvasContext = ctx;
+      r.draw();
     },
   });
 </script>
