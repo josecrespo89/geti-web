@@ -803,37 +803,67 @@
 			<div class="default-bg space blue">
 			<div class="row">
 				<div class="container">
-					<div class=""col-sm-12 d-flex justify-content-center"">
-					<h1 class="title text-center" id="contact"></h1>
+					<!-- <div class=""col-sm-12 d-flex justify-content-center""> -->
+					<div class="col-sm-6">
+					<h4 class="title text-center" id="contact"></h4>
 						<div id="lottie-container2" style="width: 400px; height: 400px;"></div>
 					</div>
+					<div class="col-sm-6">
+				<div class="footer-content">
+					<form role="form" id="footer-form" action="https://formspree.io/f/xwkgqglw" method="post">
+    						<!-- Campo oculto para el correo electrónico de respuesta -->
+    						<input type="hidden" name="_replyto" value="jose.crespo@conicet.gov.ar">
+    							<!-- Campo oculto para el asunto del correo -->
+					    <input type="hidden" name="_subject" value="Nuevo mensaje del formulario de contacto">
+					
+					    <div class="form-group has-feedback">
+					        <label class="sr-only" for="name2">Nombre</label>
+					        <input type="text" class="form-control" id="name2" placeholder="Nombre" name="nombre" required>
+					        <i class="fa fa-user form-control-feedback"></i>
+					    </div>
+					
+					    <div class="form-group has-feedback">
+					        <label class="sr-only" for="email2">Correo electrónico</label>
+					        <input type="email" class="form-control" id="email2" placeholder="Correo electrónico" name="email" required>
+					        <i class="fa fa-envelope form-control-feedback"></i>
+					    </div>
+					
+					    <div class="form-group has-feedback">
+					        <label class="sr-only" for="message2">Mensaje</label>
+					        <textarea class="form-control" rows="8" id="message2" placeholder="Mensaje" name="mensaje" required></textarea>
+					        <i class="fa fa-pencil form-control-feedback"></i>
+					    </div>
+					
+					    <!-- Botón de enviar -->
+					    <button type="submit" class="btn btn-default">Enviar</button>
+					</form>
+				</div>
+			</div>
     				</div>
 			</div>
 
-<!-- Carga la biblioteca de Lottie -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.2/lottie.min.js"></script>
-<script>
-  // Esperar a que se cargue el DOM
-  document.addEventListener('DOMContentLoaded', function() {
-    // Obtener el contenedor de la animación
-    var container = document.getElementById('lottie-container2');
-    
-    // Configurar opciones de la animación
-    var options2 = {
-      container: container, // Contenedor de la animación
-      renderer: 'svg',     // Tipo de renderizado (svg, canvas, html)
-      loop: true,          // Repetir la animación
-      autoplay: true,      // Reproducir la animación automáticamente
-      path: 'https://raw.githubusercontent.com/josecrespo89/geti-web/main/lottie.json' // Ruta del archivo JSON de Lottie
-    };
-    
-    // Cargar la animación Lottie
-    var anim = lottie.loadAnimation(options2);
-  });
-</script>
+					<!-- Carga la biblioteca de Lottie -->
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.2/lottie.min.js"></script>
+					<script>
+					  // Esperar a que se cargue el DOM
+					  document.addEventListener('DOMContentLoaded', function() {
+					    // Obtener el contenedor de la animación
+					    var container = document.getElementById('lottie-container2');
+					    
+					    // Configurar opciones de la animación
+					    var options2 = {
+					      container: container, // Contenedor de la animación
+					      renderer: 'svg',     // Tipo de renderizado (svg, canvas, html)
+					      loop: true,          // Repetir la animación
+					      autoplay: true,      // Reproducir la animación automáticamente
+					      path: 'https://raw.githubusercontent.com/josecrespo89/geti-web/main/lottie.json' // Ruta del archivo JSON de Lottie
+					    };
+					    
+					    // Cargar la animación Lottie
+					    var anim = lottie.loadAnimation(options2);
+					  });
+					</script>
 		<!-- section end -->
-
-			<div class="space"></div>
 			<div class="row">
 			<div class="container">
 			<div class="col-sm-6">
