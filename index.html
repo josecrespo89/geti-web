@@ -804,12 +804,12 @@
 			<div class="row">
 				<div class="container">
 					<!-- <div class=""col-sm-12 d-flex justify-content-center""> -->
-					<div class="col-sm-6">
-					<h4 class="title text-center" id="contact">Escribinos</h4>
-						<div id="lottie-container2" style="width: 400px; height: 400px;"></div>
+					<div class="col-sm-6"><<
+					<h2 class="title text-left" id="contact" style="font-family: 'Palatino Linotype', serif;">Escribinos</h2>
+					<div id="lottie-container2" style="width: 400px; height: 400px;"></div>
 					</div>
 					<div class="col-sm-6">
-				<div class="footer-content">
+					<div class="footer-content">
 					<form role="form" id="footer-form" action="https://formspree.io/f/xwkgqglw" method="post">
     						<!-- Campo oculto para el correo electrónico de respuesta -->
     						<input type="hidden" name="_replyto" value="jose.crespo@conicet.gov.ar">
@@ -901,6 +901,32 @@
 					</ul>
 				</div>
 			</div>
+					<div class="col-sm-6"><<
+					<div id="lottie-container3" style="width: 300px; height: 300px;"></div>
+					</div>
+
+				<!-- Carga la biblioteca de Lottie -->
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.2/lottie.min.js"></script>
+					<script>
+					  // Esperar a que se cargue el DOM
+					  document.addEventListener('DOMContentLoaded', function() {
+					    // Obtener el contenedor de la animación
+					    var container = document.getElementById('lottie-container3');
+					    
+					    // Configurar opciones de la animación
+					    var options3 = {
+					      container: container, // Contenedor de la animación
+					      renderer: 'svg',     // Tipo de renderizado (svg, canvas, html)
+					      loop: true,          // Repetir la animación
+					      autoplay: true,      // Reproducir la animación automáticamente
+					      path: 'https://raw.githubusercontent.com/josecrespo89/geti-web/main/lottie3.json' // Ruta del archivo JSON de Lottie
+					    };
+					    
+					    // Cargar la animación Lottie
+					    var anim = lottie.loadAnimation(options3);
+					  });
+					</script>
+		<!-- section end -->
 		</div>
 	</div>
 </div>
